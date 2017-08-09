@@ -14,16 +14,18 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *btn=[UIButton wh_buttonWithTitle:@"点我" backColor:[UIColor cyanColor] backImageName:nil titleColor:[UIColor blackColor] fontSize:14 frame:CGRectMake(40, 64+10, 120, 30) cornerRadius:15];
+    btn.paramDic=@{@"name":@"小明",@"age":@"27"};
+    [self.view addSubview:btn];
+    [btn wh_addActionHandler:^{
+        NSLog(@"我叫%@,今年%@岁",btn.paramDic[@"name"],btn.paramDic[@"age"]);
+        [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];//这里只有normal状态正常显示
+    }];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

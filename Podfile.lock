@@ -1,0 +1,12 @@
+PODS:
+  - WHKit (1.2.9)
+
+DEPENDENCIES:
+  - WHKit (~> 1.2.9)
+
+SPEC CHECKSUMS:
+  WHKit: 7daebc37856793eac60f4ef29cb6b6edf1640da1
+
+PODFILE CHECKSUM: bcbbfa29dfbbac5281a2f3c5c493566a16f693a2
+
+COCOAPODS: 1.3.0.beta.1

@@ -29,6 +29,8 @@
 		234D1DD01F3AA0E700D3CA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D1DCE1F3AA0E700D3CA6C /* Main.storyboard */; };
 		234D1DD21F3AA0E700D3CA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D1DD11F3AA0E700D3CA6C /* Assets.xcassets */; };
 		234D1DD51F3AA0E700D3CA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D1DD31F3AA0E700D3CA6C /* LaunchScreen.storyboard */; };
+		234D1DDE1F3AA58100D3CA6C /* UIButton+ZGPassValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D1DDD1F3AA58100D3CA6C /* UIButton+ZGPassValue.m */; };
+		2FC00C7BA5DF3F3D9998B266 /* libPods-ZGButtonEventSender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 381AB9DFD6172C1D7A082F6D /* libPods-ZGButtonEventSender.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,9 +64,14 @@
 		234D1DC11F3AA0E700D3CA6C /* ZGMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMineController.h; sourceTree = "<group>"; };
 		234D1DC21F3AA0E700D3CA6C /* ZGMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMineController.m; sourceTree = "<group>"; };
 		234D1DCF1F3AA0E700D3CA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		234D1DD11F3AA0E700D3CA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		234D1DD11F3AA0E700D3CA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		234D1DD41F3AA0E700D3CA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		234D1DD61F3AA0E700D3CA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234D1DD61F3AA0E700D3CA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		234D1DDC1F3AA58100D3CA6C /* UIButton+ZGPassValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZGPassValue.h"; sourceTree = "<group>"; };
+		234D1DDD1F3AA58100D3CA6C /* UIButton+ZGPassValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZGPassValue.m"; sourceTree = "<group>"; };
+		381AB9DFD6172C1D7A082F6D /* libPods-ZGButtonEventSender.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGButtonEventSender.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB1F26310E6451D0AD36E4A /* Pods-ZGButtonEventSender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGButtonEventSender.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGButtonEventSender/Pods-ZGButtonEventSender.debug.xcconfig"; sourceTree = "<group>"; };
+		E51F1ED76FA92512F26528C1 /* Pods-ZGButtonEventSender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGButtonEventSender.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGButtonEventSender/Pods-ZGButtonEventSender.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +83,7 @@
 				234D1D8E1F3AA0E700D3CA6C /* UIKit.framework in Frameworks */,
 				234D1D8C1F3AA0E700D3CA6C /* Foundation.framework in Frameworks */,
 				234D1D901F3AA0E700D3CA6C /* CoreImage.framework in Frameworks */,
+				2FC00C7BA5DF3F3D9998B266 /* libPods-ZGButtonEventSender.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +96,7 @@
 				234D1D911F3AA0E700D3CA6C /* ZGButtonEventSender */,
 				234D1D881F3AA0E700D3CA6C /* Frameworks */,
 				234D1D871F3AA0E700D3CA6C /* Products */,
+				FEB7059C016239BF2355B08B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +115,7 @@
 				234D1D8B1F3AA0E700D3CA6C /* Foundation.framework */,
 				234D1D8D1F3AA0E700D3CA6C /* UIKit.framework */,
 				234D1D8F1F3AA0E700D3CA6C /* CoreImage.framework */,
+				381AB9DFD6172C1D7A082F6D /* libPods-ZGButtonEventSender.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,14 +123,6 @@
 		234D1D911F3AA0E700D3CA6C /* ZGButtonEventSender */ = {
 			isa = PBXGroup;
 			children = (
-				234D1D951F3AA0E700D3CA6C /* AppDelegate.h */,
-				234D1D961F3AA0E700D3CA6C /* AppDelegate.m */,
-				234D1D981F3AA0E700D3CA6C /* ViewController.h */,
-				234D1D991F3AA0E700D3CA6C /* ViewController.m */,
-				234D1DCE1F3AA0E700D3CA6C /* Main.storyboard */,
-				234D1DD11F3AA0E700D3CA6C /* Assets.xcassets */,
-				234D1DD31F3AA0E700D3CA6C /* LaunchScreen.storyboard */,
-				234D1DD61F3AA0E700D3CA6C /* Info.plist */,
 				234D1DCC1F3AA0E700D3CA6C /* Utils */,
 				234D1DCA1F3AA0E700D3CA6C /* Resource */,
 				234D1DC81F3AA0E700D3CA6C /* ThridParty */,
@@ -137,6 +139,8 @@
 		234D1D921F3AA0E700D3CA6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				234D1DCE1F3AA0E700D3CA6C /* Main.storyboard */,
+				234D1DD31F3AA0E700D3CA6C /* LaunchScreen.storyboard */,
 				234D1D931F3AA0E700D3CA6C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -170,6 +174,10 @@
 		234D1DAC1F3AA0E700D3CA6C /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				234D1D951F3AA0E700D3CA6C /* AppDelegate.h */,
+				234D1D961F3AA0E700D3CA6C /* AppDelegate.m */,
+				234D1D981F3AA0E700D3CA6C /* ViewController.h */,
+				234D1D991F3AA0E700D3CA6C /* ViewController.m */,
 				234D1DAD1F3AA0E700D3CA6C /* AppDelegate+AppService.h */,
 				234D1DAE1F3AA0E700D3CA6C /* AppDelegate+AppService.m */,
 			);
@@ -305,6 +313,8 @@
 		234D1DCA1F3AA0E700D3CA6C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				234D1DD11F3AA0E700D3CA6C /* Assets.xcassets */,
+				234D1DD61F3AA0E700D3CA6C /* Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -312,8 +322,19 @@
 		234D1DCC1F3AA0E700D3CA6C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				234D1DDC1F3AA58100D3CA6C /* UIButton+ZGPassValue.h */,
+				234D1DDD1F3AA58100D3CA6C /* UIButton+ZGPassValue.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FEB7059C016239BF2355B08B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBB1F26310E6451D0AD36E4A /* Pods-ZGButtonEventSender.debug.xcconfig */,
+				E51F1ED76FA92512F26528C1 /* Pods-ZGButtonEventSender.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,9 +344,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 234D1DD91F3AA0E700D3CA6C /* Build configuration list for PBXNativeTarget "ZGButtonEventSender" */;
 			buildPhases = (
+				251B94F47692B4A37425A880 /* [CP] Check Pods Manifest.lock */,
 				234D1D821F3AA0E700D3CA6C /* Sources */,
 				234D1D831F3AA0E700D3CA6C /* Frameworks */,
 				234D1D841F3AA0E700D3CA6C /* Resources */,
+				E18BF651C9EFA4DE036E5D2C /* [CP] Embed Pods Frameworks */,
+				E48F1839C84BE7697E56B54C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,6 +414,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		251B94F47692B4A37425A880 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E18BF651C9EFA4DE036E5D2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGButtonEventSender/Pods-ZGButtonEventSender-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E48F1839C84BE7697E56B54C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGButtonEventSender/Pods-ZGButtonEventSender-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		234D1D821F3AA0E700D3CA6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -398,6 +470,7 @@
 				234D1DA81F3AA0E700D3CA6C /* ZGNavigationController.m in Sources */,
 				234D1D9A1F3AA0E700D3CA6C /* ViewController.m in Sources */,
 				234D1DAB1F3AA0E700D3CA6C /* ZGTabBarController.m in Sources */,
+				234D1DDE1F3AA58100D3CA6C /* UIButton+ZGPassValue.m in Sources */,
 				234D1DA51F3AA0E700D3CA6C /* ZGBaseController.m in Sources */,
 				234D1D971F3AA0E700D3CA6C /* AppDelegate.m in Sources */,
 				234D1D941F3AA0E700D3CA6C /* main.m in Sources */,
@@ -521,9 +594,13 @@
 		};
 		234D1DDA1F3AA0E700D3CA6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB1F26310E6451D0AD36E4A /* Pods-ZGButtonEventSender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZGButtonEventSender/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = ZGButtonEventSender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = offcn.ZGButtonEventSender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,9 +609,13 @@
 		};
 		234D1DDB1F3AA0E700D3CA6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E51F1ED76FA92512F26528C1 /* Pods-ZGButtonEventSender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZGButtonEventSender/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = ZGButtonEventSender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = offcn.ZGButtonEventSender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,6 +641,7 @@
 				234D1DDB1F3AA0E700D3CA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
