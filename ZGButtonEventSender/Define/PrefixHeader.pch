@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  test
+//
+//  Created by king on 16/7/20.
+//  Copyright © 2016年 King. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//一些工具宏，比如获取屏幕宽高，系统版本，数据类型验证 自己创建的页面控制器等
+#import "ZGUtilsMacros.h"
+
+
+//服务器接口地址以及环境开关
+#import "ZGURLMacros.h"
+
+//全局用的色值、字体大小
+#import "ZGFontAndColorMacros.h"
+
+//第三方框架、配置key
+#import "ZGThirdMacros.h"
+
+#endif
